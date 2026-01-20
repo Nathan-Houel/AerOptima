@@ -48,7 +48,7 @@ def process_time_data(df):
 # Main block
 flights_path = 'Dataset/flights.csv'
 airlines_path = 'Dataset/airlines.csv'
-output = 'clean_flights.csv'
+output = 'Data Engineer/clean_flights.csv'
 
 [flights, airlines] = load_data(flights_path, airlines_path)
 df_merged = merge_data(flights, airlines)
