@@ -1,1 +1,1 @@
-![AerOptima cover](AerOptima cover.png)
+![AerOptima cover](<AerOptima cover.png>)
