@@ -11,6 +11,14 @@ AerOptima is a comprehensive data science project designed to analyze and predic
 The primary goal is to predict the **arrival delay** of a flight using only information available before takeoff, providing a realistic tool for passengers and airlines.
 
 
+## 🗄️ The Dataset
+The data powering this project comes from the **2015 Flight Delays and Cancellations** dataset, originally collected by the U.S. Department of Transportation (DOT) and hosted on Kaggle. 
+
+* **Source:** [Kaggle: US Flight Delays Dataset](https://www.kaggle.com/datasets/usdot/flight-delays)
+* **Scope:** It contains detailed information on nearly 6 million commercial flights operated by US airlines in 2015.
+* **Features:** The dataset includes scheduled and actual departure/arrival times, airlines, origin/destination airports, flight distances, and detailed delay causes (which we meticulously filtered to avoid data leakage).
+
+
 ## 📂 **Repository Structure**
 
 The project is organized into three main pillars:
