@@ -1,0 +1,97 @@
+<svg viewBox="0 0 1500 300" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="cardGradFinal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1500" height="300" fill="url(#bg)" rx="16"/>
+
+  <text x="750" y="40" text-anchor="middle" fill="#f1f5f9" font-size="22" font-weight="700">AerOptima — End-to-End Pipeline</text>
+
+  <!-- Stage template: x positions -->
+  <!-- 7 stages, box width 170, gap between centers ~200 -->
+
+  <!-- Stage 1: Raw Dataset -->
+  <g>
+    <rect x="30" y="90" width="170" height="120" rx="14" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="115" y="135" text-anchor="middle" font-size="30">📊</text>
+    <text x="115" y="165" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="600">Raw Dataset</text>
+    <text x="115" y="185" text-anchor="middle" fill="#cbd5e1" font-size="11">2015 US Flights</text>
+    <text x="115" y="199" text-anchor="middle" fill="#cbd5e1" font-size="11">~6M records</text>
+  </g>
+  <line x1="205" y1="150" x2="238" y2="150" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 2: Cleaning -->
+  <g>
+    <rect x="240" y="90" width="170" height="120" rx="14" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="325" y="135" text-anchor="middle" font-size="30">🧹</text>
+    <text x="325" y="165" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="600">Cleaning</text>
+    <text x="325" y="185" text-anchor="middle" fill="#cbd5e1" font-size="11">Missing values</text>
+    <text x="325" y="199" text-anchor="middle" fill="#cbd5e1" font-size="11">Consistency checks</text>
+  </g>
+  <line x1="415" y1="150" x2="448" y2="150" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 3: SQLite -->
+  <g>
+    <rect x="450" y="90" width="170" height="120" rx="14" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="535" y="135" text-anchor="middle" font-size="30">🗄️</text>
+    <text x="535" y="165" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="600">SQLite</text>
+    <text x="535" y="185" text-anchor="middle" fill="#cbd5e1" font-size="11">Structured storage</text>
+    <text x="535" y="199" text-anchor="middle" fill="#cbd5e1" font-size="11">Single source of truth</text>
+  </g>
+  <line x1="625" y1="150" x2="658" y2="150" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 4: EDA -->
+  <g>
+    <rect x="660" y="90" width="170" height="120" rx="14" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="745" y="135" text-anchor="middle" font-size="30">🔍</text>
+    <text x="745" y="165" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="600">EDA</text>
+    <text x="745" y="185" text-anchor="middle" fill="#cbd5e1" font-size="11">Trends &amp; correlations</text>
+    <text x="745" y="199" text-anchor="middle" fill="#cbd5e1" font-size="11">Airline / time patterns</text>
+  </g>
+  <line x1="835" y1="150" x2="868" y2="150" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 5: Feature Engineering -->
+  <g>
+    <rect x="870" y="90" width="170" height="120" rx="14" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="955" y="135" text-anchor="middle" font-size="30">🛠️</text>
+    <text x="955" y="165" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="600">Feature Eng.</text>
+    <text x="955" y="185" text-anchor="middle" fill="#cbd5e1" font-size="11">Pre-takeoff signals</text>
+    <text x="955" y="199" text-anchor="middle" fill="#cbd5e1" font-size="11">No data leakage</text>
+  </g>
+  <line x1="1045" y1="150" x2="1078" y2="150" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 6: ML -->
+  <g>
+    <rect x="1080" y="90" width="170" height="120" rx="14" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="1165" y="135" text-anchor="middle" font-size="30">🤖</text>
+    <text x="1165" y="165" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="600">ML Modeling</text>
+    <text x="1165" y="185" text-anchor="middle" fill="#cbd5e1" font-size="11">Linear Regression</text>
+    <text x="1165" y="199" text-anchor="middle" fill="#cbd5e1" font-size="11">XGBoost</text>
+  </g>
+  <line x1="1255" y1="150" x2="1288" y2="150" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 7: Prediction -->
+  <g>
+    <rect x="1290" y="90" width="180" height="120" rx="14" fill="url(#cardGradFinal)" stroke="#fb923c" stroke-width="1.5"/>
+    <text x="1380" y="135" text-anchor="middle" font-size="30">🎯</text>
+    <text x="1380" y="165" text-anchor="middle" fill="#fff7ed" font-size="15" font-weight="700">Prediction</text>
+    <text x="1380" y="185" text-anchor="middle" fill="#fed7aa" font-size="11">Arrival delay</text>
+    <text x="1380" y="199" text-anchor="middle" fill="#fed7aa" font-size="11">before takeoff</text>
+  </g>
+
+  <text x="750" y="265" text-anchor="middle" fill="#64748b" font-size="12">Data Engineering → Data Analysis → Data Science</text>
+</svg>
