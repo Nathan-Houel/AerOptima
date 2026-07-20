@@ -2,7 +2,7 @@
 
 ## **An End-to-End Data Project for Flight Delay Prediction**
 
-[![AerOptima cover](https://github.com/Nathan-Houel/AerOptima/raw/main/AerOptima%20cover.png)](./Images/AerOptima%20cover.png)
+[![AerOptima cover](./Images/AerOptima%20cover.png)](./Images/AerOptima%20cover.png)
 
 
 
